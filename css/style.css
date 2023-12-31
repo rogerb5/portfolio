@@ -289,7 +289,7 @@ button.btn.active {
 
 @media screen and (max-width: 700px) {
     div.ts-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     div.fths-grid {
