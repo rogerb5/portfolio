@@ -51,6 +51,10 @@ p.fs-h1 {
     font-weight: 600;
 }
 
+p.fs-p {
+    margin-bottom: 1.7rem;
+}
+
 h1,
 h2 {
     text-wrap: balance;
@@ -107,35 +111,6 @@ nav.nav a {
 /* First section styling **************/
 section.filterable-s {
     margin-top: 8vh;
-}
-
-div.fs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 240px));
-    gap: 0.3rem;
-}
-
-section .fs-p {
-    margin-bottom: var(--p-margin);
-}
-
-div.fs-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Second Section Styling **********/
-div.ss-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
-    gap: 0.3rem;
-}
-
-div.ss-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 /* Third Section styling *****/
@@ -313,13 +288,8 @@ button.btn.active {
 }
 
 @media screen and (max-width: 700px) {
-    div.fs-grid {
+    div.ts-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px;
-    }
-
-    div.ss-grid {
-        grid-template-columns: 1fr 1fr;
     }
 
     div.fths-grid {
