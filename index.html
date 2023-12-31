@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roger's Portfolio</title>
+    <meta name="description" content="Roger's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <!--- Filter -->
+    <nav class="nav-filter">
+        <p class="filter-p">Settings:</p>
+        <button class="btn" data-filter="all" id="firstBtn">All</button>
+        <button class="btn" data-filter="program">Software</button>
+        <button class="btn" data-filter="website">Websites</button>
+    </nav>
+    <div class="div-bg">
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav-a">Roger's Portfolio</a>
+        <p class="nav-p">Filter</p>
+    </nav>
+
+    <section class="fs filterable-s" data-filter="program">
+        <a href="#">Data Structure Visualizer</a>
+        <p class="fs-p">
+            This website showcases data structures visually. The user has the chance to
+            interact with each respective structure and relevant operations. Additionally, all pages
+            have an informational modal which compliments the site interactivity. The hopes of this
+            project is to help anyone who is learning data structures gain familiarity with those concepts.
+            As the designer and developer for this project I implemented a modern, consistent, and fast
+            interface.
+        </p>
+        <div class="fths-grid">
+            <img src="img/11.jpeg" data-path="img/11.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/12.jpeg" data-path="img/12.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/13.jpeg" data-path="img/13.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/14.jpeg" data-path="img/14.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/15.jpeg" data-path="img/15.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/16.jpeg" data-path="img/16.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/17.jpeg" data-path="img/17.jpeg" class="fourth-g-img" alt="user interface">
+            <img src="img/18.jpeg" data-path="img/18.jpeg" class="fourth-g-img" alt="user interface">
+        </div>
+    </section>
+
+    <section class="fs filterable-s" data-filter="program">
+        <a href="https://codepen.io/rogerben24/full/bGzMRPq">Percolation</a>
+        <p class="fs-p">This project was inspired by CS 61B's homework number two given a porous landscape with
+            water on the surface, under what conditions will the water be able to drain to the bottom?
+            I stumbled across the project online and found it intriguing. So for a challange I implemented this
+            concept from scratch using their
+            specification as the guidance with web techologies instead of Java as they are required to.
+        </p>
+        <div class="ts-grid">
+            <img src="img/8.jpeg" data-path="img/8.jpeg" class="third-g-img" alt="user interface">
+            <img src="img/9.jpeg" data-path="img/9.jpeg" class="third-g-img" alt="user interface">
+            <img src="img/10.jpeg" data-path="img/10.jpeg" class="third-g-img" alt="user interface">
+            <img src="img/011.jpeg" data-path="img/011.jpeg" class="third-g-img" alt="user interface">
+            <img src="img/012.jpeg" data-path="img/012.jpeg" class="third-g-img" alt="user interface">
+        </div>
+    </section>
+
+
+    <footer>
+        <article class="footer-a">
+            <p>Hello, my name is Roger Benjume.</p>
+            <p>
+                I am computer science student that specializes in front-end website development.
+            </p>
+            <ul>
+                <li>Languages and skills:</li>
+                <li>JavaScript, Python, R, SQL, Java, CSS</li>
+            </ul>
+        </article>
+        <article class="footer-a">
+            <p>Contact:</p>
+            <p>rogerdavidb57[at]gmail.com</p>
+            <p>© 2023. Designed and Developed by Roger.</p>
+        </article>
+    </footer>
+
+    <main class="m-overlay">
+        <nav class="m-overlay-nav">
+            <p class="m-overlay-cap">Project Gallery</p>
+            <button class="exit">Exit</button>
+        </nav>
+
+        <div class="m-overlay-d">
+            <img src="" class="m-overlay-img" alt="sidewalk">
+            <div class="prev btn"></div>
+            <div class="next btn"></div>
+        </div>
+
+        <section class="m-overlay-s">
+            <h2 class="m-overlay-counter"></h2>
+        </section>
+    </main>
+
+    <!-- <script src="js/boxes.js"></script> -->
+    <script src="js/modal.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+
+</html>

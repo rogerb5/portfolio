@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'Crimson Text', serif;
+}
+
+:root {
+    --primary-color: whitesmoke;
+    --primary-txt-color: #333;
+    --primary-modal-bg: rgba(241, 241, 241, 0.9);
+    --primary-btn-color: blue;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: calc(16px + 0.4vmax);
+    background-color: var(--primary-color);
+}
+
+
+body {
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+    color: var(--primary-txt-color);
+}
+
+a {
+    color: var(--primary-txt-color);
+}
+
+p {
+    margin: 1.3em 0;
+    color: var(--primary-txt-color);
+}
+
+p.fs-h1 {
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    text-wrap: balance;
+    color: var(--primary-txt-color);
+}
+
+:root {
+    --component-padding: 1rem;
+    --nav-height: 20px;
+    --p-margin: 0.4rem;
+}
+
+section {
+    padding: var(--component-padding);
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+div.div-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+    opacity: 0.2;
+}
+
+div.div-bg.clear {
+    opacity: 0;
+}
+
+/* Navigation bar styling ***********/
+nav.nav {
+    padding: var(--component-padding);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    z-index: 1;
+}
+
+nav.nav a {
+    color: var(--primary-txt-color);
+    text-decoration: none;
+}
+
+/* First section styling **************/
+section.filterable-s {
+    margin-top: 8vh;
+}
+
+div.fs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 240px));
+    gap: 0.3rem;
+}
+
+section .fs-p {
+    margin-bottom: var(--p-margin);
+}
+
+div.fs-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Second Section Styling **********/
+div.ss-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    gap: 0.3rem;
+}
+
+div.ss-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Third Section styling *****/
+div.ts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.3rem;
+}
+
+div.ts-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Third Section styling *****/
+div.fths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 0.3rem;
+}
+
+div.fths-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Styling ***************/
+footer {
+    padding: var(--component-padding);
+}
+
+footer article p {
+    margin-bottom: var(--p-margin);
+}
+
+/* Main overlay Component *****************************/
+main.m-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-modal-bg);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+main.m-overlay.active {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: all;
+}
+
+main.m-overlay nav {
+    padding: var(--component-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+}
+
+main.m-overlay nav button {
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border: none;
+    color: var(--primary-txt-color);
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+div.m-overlay-d {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.m-overlay-d img {
+    width: 70vw;
+    height: 70vh;
+    object-fit: contain;
+}
+
+section.m-overlay-s {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+/* Prev and next button */
+div.btn {
+    z-index: 2;
+    border: 0;
+}
+
+div.prev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90%;
+    width: 50%;
+    cursor: w-resize;
+}
+
+div.next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 90%;
+    width: 50%;
+    cursor: e-resize;
+}
+
+/* boxes */
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+}
+
+/*** NAV FILTER *******************************/
+nav.nav-filter {
+    background-color: var(--primary-color);
+    /* display: flex; */
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 0.7rem;
+    display: none;
+}
+
+nav.nav-filter.active {
+    display: flex;
+}
+
+p.nav-p:hover {
+    cursor: pointer;
+}
+
+button.btn {
+    border: 1px solid whitesmoke;
+    background-color: #161616;
+    color: whitesmoke;
+    position: relative;
+    outline: none;
+    margin: 0.3rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    font-size: 1rem;
+    z-index: -1;
+}
+
+button.btn.active {
+    color: greenyellow;
+}
+
+@media screen and (max-width: 700px) {
+    div.fs-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+    }
+
+    div.ss-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.fths-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav.nav-filter {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        left: 0;
+        top: 60px;
+        padding: 1rem;
+        align-items: center;
+        position: relative;
+        border: 2px solid greenyellow;
+    }
+
+    div.m-overlay-d img {
+        width: 90vw;
+        height: 80vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #1e1e1f;
+        --primary-txt-color: whitesmoke;
+        --primary-modal-bg: rgba(0, 0, 0, 0.8);
+    }
+
+    img {
+        filter: brightness(.7) contrast(1.2)
+    }
+}
