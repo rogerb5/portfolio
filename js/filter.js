@@ -3,6 +3,7 @@ const articleTag = Array.from(document.querySelectorAll('section.filterable-s'))
 const filterBtn = document.querySelector('p.nav-p');
 const filterTag = document.querySelector('nav.nav-filter');
 
+// filter button
 filterBtn.addEventListener('click', () => {
     filterTag.classList.toggle('active');
     if (filterTag.classList.contains('active')) {
