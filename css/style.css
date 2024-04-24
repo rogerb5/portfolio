@@ -13,7 +13,6 @@
     --primary-color: whitesmoke;
     --primary-txt-color: #333;
     --primary-modal-bg: rgba(241, 241, 241, 0.9);
-    --primary-btn-color: blue;
 }
 
 html,
@@ -110,7 +109,7 @@ section.filterable-s {
 /* Third Section styling *****/
 div.ts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 0.3rem;
 }
 
@@ -122,7 +121,7 @@ div.ts-grid img {
 
 div.fths-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 0.3rem;
 }
 
